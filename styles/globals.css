@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Inter;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 500;
+  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #f3f4f6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+#__next {
+  height: 100%;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 400;
+}
+
+.btn-google {
+  background: #db4a39;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-primary-darker {
+  background: #1448cc;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
+}
