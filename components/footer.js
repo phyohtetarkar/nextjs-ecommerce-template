@@ -72,7 +72,7 @@ function Footer() {
               <div className="text-light text-opacity-75 mb-3 small text-center text-md-start">
                 Subscribe for promotions and wonderful events
               </div>
-              <form className="hstack gap-2 justify-content-center justify-content-md-start">
+              <form className="hstack gap-2 justify-content-center justify-content-md-start mb-3">
                 <div>
                   <input
                     type="email"
@@ -82,6 +82,14 @@ function Footer() {
                 </div>
                 <button className="btn btn-warning">Subscribe</button>
               </form>
+              <div className="hstack gap-2 justify-content-center justify-content-md-start">
+                <a href="#" className="text-decoration-none">
+                  <img src="/images/apple-app-store-badge.svg" alt="" />
+                </a>
+                <a href="#" className="text-decoration-none">
+                  <img src="/images/google-play-badge.svg" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

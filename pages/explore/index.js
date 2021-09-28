@@ -5,12 +5,12 @@ function ExploreProducts() {
   return (
     <div className="vstack">
       <div className="bg-secondary">
-        <div className="container-xl">
+        <div className="container">
           <div className="row py-4 px-2">
             <nav aria-label="breadcrumb col-12">
               <ol className="breadcrumb mb-1">
                 <li className="breadcrumb-item">
-                  <a href="#">All Products</a>
+                  <a href="#">All Categories</a>
                 </li>
                 <li className="breadcrumb-item">
                   <a href="#">Electronics</a>
@@ -25,7 +25,7 @@ function ExploreProducts() {
       </div>
       <div className="container py-4">
         <div className="row g-3">
-          <div className="col-lg-4 col-xxl-3">
+          <div className="col-lg-3">
             <div className="accordion shadow-sm rounded">
               <div className="accordion-item border-bottom">
                 <h2 className="accordion-header">
@@ -161,7 +161,7 @@ function ExploreProducts() {
               </div>
             </div>
           </div>
-          <div className="col-lg-8 col-xxl-9">
+          <div className="col-lg-9">
             <div className="hstack justify-content-between mb-3">
               <span className="text-dark">33 Items found</span>
               <div className="btn-group" role="group">

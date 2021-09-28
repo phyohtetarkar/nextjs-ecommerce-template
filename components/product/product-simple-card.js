@@ -3,14 +3,12 @@ import Link from "next/link";
 function ProductSimpleCard({ id, title }) {
   return (
     <div className="card h-100 border-0 shadow-sm">
-      <div>
+      <div className="ratio ratio-1x1">
         <img
           className="card-img-top"
           src={`https://source.unsplash.com/random/200x300?random=${Math.floor(
             Math.random() * 100
           )}`}
-          width={200}
-          height={240}
           alt="Product image."
           style={{ objectFit: "cover" }}
         />

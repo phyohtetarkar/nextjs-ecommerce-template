@@ -10,7 +10,7 @@ function Login() {
           <div className="card border-0 shadow-sm">
             <div className="card-body px-4">
               <h4 className="card-title fw-bold mt-2 mb-4">Sign In</h4>
-              <form className="row g-3">
+              <form className="row g-2">
                 <div className="col-md-12">
                   <label className="form-label">Email</label>
                   <input
@@ -36,28 +36,27 @@ function Login() {
                     <div className="col">
                       <hr className="text-muted" />
                     </div>
-                    <div className="col-auto align-self-center">OR</div>
+                    <div className="col-auto align-self-center text-muted">
+                      or continue with
+                    </div>
                     <div className="col">
                       <hr className="text-muted" />
                     </div>
                   </div>
                 </div>
 
-                <div className="col-md-12 d-grid gap-2">
-                  <button className="btn-facebook border-0">
-                    <FontAwesomeIcon
-                      icon={["fab", "facebook-f"]}
-                      className="me-3"
-                    />
-                    Continue with Facebook
-                  </button>
-                  <button className="btn-google border-0">
-                    <FontAwesomeIcon
-                      icon={["fab", "google"]}
-                      className="me-3"
-                    />
-                    Continue with Google
-                  </button>
+                <div className="col-md-12">
+                  <div className="hstack gap-2 justify-content-center">
+                    <button className="btn-facebook rounded-circle">
+                      <FontAwesomeIcon icon={["fab", "facebook-f"]} />
+                    </button>
+                    <button className="btn-google rounded-circle">
+                      <FontAwesomeIcon icon={["fab", "google"]} />
+                    </button>
+                    <button className="btn-apple rounded-circle">
+                      <FontAwesomeIcon icon={["fab", "apple"]} />
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

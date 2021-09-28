@@ -6537,6 +6537,10 @@ textarea.form-control-lg {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
+.ratio-1x2 {
+  --bs-aspect-ratio: calc(2 / 1.5 * 100%);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;

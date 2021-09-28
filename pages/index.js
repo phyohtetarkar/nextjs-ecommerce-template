@@ -31,7 +31,7 @@ export default function Home() {
                 ></button>
               </div>
               <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active" data-bs-interval="3000">
                   <div className="ratio ratio-21x9">
                     <img
                       src="/images/online-shopping.jpg"
@@ -40,7 +40,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="3000">
                   <div className="ratio ratio-21x9">
                     <img
                       src="/images/online-shopping.jpg"
@@ -49,7 +49,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="3000">
                   <div className="ratio ratio-21x9">
                     <img
                       src="/images/online-shopping.jpg"

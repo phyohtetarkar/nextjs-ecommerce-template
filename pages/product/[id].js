@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import ProductSimpleHorizontal from "../../components/product/product-simple-horizontal";
 
 function ProductDetail() {
@@ -8,7 +7,7 @@ function ProductDetail() {
   return (
     <div className="vstack">
       <div className="bg-secondary">
-        <div className="container-xl">
+        <div className="container">
           <div className="row py-4 px-2">
             <nav aria-label="breadcrumb col-12">
               <ol className="breadcrumb mb-1">
@@ -27,7 +26,7 @@ function ProductDetail() {
         </div>
       </div>
       <div className="bg-white mb-4">
-        <div className="container-xl py-4">
+        <div className="container py-4">
           <div className="row gy-3 gx-4">
             <div className="col-lg-5">
               <div className="row">
@@ -239,8 +238,11 @@ function ProductDetail() {
         <div className="row g-3">
           <div className="col-lg-8">
             <div className="card border-0 shadow-sm">
-              <div className="px-3 d-flex border-bottom" style={{ height: 70 }}>
-                <ul className="nav nav-pills my-auto">
+              <div
+                className="px-3 d-flex border-bottom overflow-auto"
+                style={{ height: 70 }}
+              >
+                <ul className="nav nav-pills my-auto flex-nowrap">
                   <li className="nav-item">
                     <a href="#" className="nav-link active" aria-current="true">
                       Description

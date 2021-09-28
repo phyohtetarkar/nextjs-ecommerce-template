@@ -29,7 +29,7 @@ function DeliveryInfo() {
                   <label className="form-label">Phone</label>
                   <div className="input-group">
                     <div>
-                      <select className="form-select rounded-0 rounded-start">
+                      <select className="form-select rounded-0 rounded-start bg-light">
                         <option>+95</option>
                       </select>
                     </div>

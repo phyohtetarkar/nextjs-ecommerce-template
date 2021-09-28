@@ -4,7 +4,7 @@ import Link from "next/link";
 function Header({ simple, hideAuth }) {
   let title = process.env.APP_NAME;
   return (
-    <header className="d-flex flex-column">
+    <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <div className="container">
           <Link href="/">
@@ -35,18 +35,10 @@ function Header({ simple, hideAuth }) {
             </form>
           </div>
           <div className="d-flex">
-            <Link href="/shopping-cart">
-              <a className="btn btn-light border">
-                <FontAwesomeIcon icon={["fas", "shopping-cart"]} />
-                <span className="badge rounded-pill bg-danger ms-2 my-auto">
-                  3
-                </span>
-              </a>
-            </Link>
             {!hideAuth && (
               <>
                 <Link href="/auth/login">
-                  <a className="btn btn-outline-primary ms-2 d-none d-md-block">
+                  <a className="btn btn-outline-primary d-none d-md-block">
                     Login
                   </a>
                 </Link>
@@ -57,6 +49,15 @@ function Header({ simple, hideAuth }) {
                 </Link>
               </>
             )}
+            <Link href="/shopping-cart">
+              <a className="btn btn-light border position-relative ms-2 fw-normal">
+                <FontAwesomeIcon icon={["fas", "shopping-cart"]} />
+                &nbsp;Cart
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-auto">
+                  3
+                </span>
+              </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -78,7 +79,7 @@ function Header({ simple, hideAuth }) {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link href="/explore">
-                    <a className="nav-link">All Products</a>
+                    <a className="nav-link">All Categories</a>
                   </Link>
                 </li>
                 <li className="nav-item">
