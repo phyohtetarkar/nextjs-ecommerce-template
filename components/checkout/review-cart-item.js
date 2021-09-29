@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 
 function ReviewCartItem({ id }) {
   return (
     <div className="d-flex">
-      <div className="flex-shink-0" style={{ height: 80 }}>
+      <div className="flex-shink-0">
         <img
           className="rounded"
           src={`https://source.unsplash.com/random/80x80?random=${Math.floor(

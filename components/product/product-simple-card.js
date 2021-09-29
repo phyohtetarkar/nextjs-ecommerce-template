@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 function ProductSimpleCard({ id, title }) {
@@ -6,7 +7,7 @@ function ProductSimpleCard({ id, title }) {
       <div className="ratio ratio-1x1">
         <img
           className="card-img-top"
-          src={`https://source.unsplash.com/random/200x300?random=${Math.floor(
+          src={`https://source.unsplash.com/random/200x200?random=${Math.floor(
             Math.random() * 100
           )}`}
           alt="Product image."
@@ -20,7 +21,35 @@ function ProductSimpleCard({ id, title }) {
           </a>
         </Link>
 
-        <h6 className="mb-0 fw-semibold">2450 Ks</h6>
+        <div className="hstack mb-2">
+          <FontAwesomeIcon
+            icon={["fas", "star"]}
+            size="sm"
+            className="text-warning"
+          />
+          <FontAwesomeIcon
+            icon={["fas", "star"]}
+            size="sm"
+            className="text-warning"
+          />
+          <FontAwesomeIcon
+            icon={["fas", "star"]}
+            size="sm"
+            className="text-warning"
+          />
+          <FontAwesomeIcon
+            icon={["fas", "star"]}
+            size="sm"
+            className="text-warning"
+          />
+          <FontAwesomeIcon
+            icon={["fas", "star-half-alt"]}
+            size="sm"
+            className="text-warning"
+          />
+        </div>
+
+        <h6 className="mb-0 fw-semibold">15000 Ks</h6>
       </div>
     </div>
   );

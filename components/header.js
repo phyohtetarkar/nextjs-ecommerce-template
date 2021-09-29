@@ -121,7 +121,7 @@ function Header({ simple, hideAuth }) {
                     English
                   </a>
                   <ul
-                    className="dropdown-menu dropdown-menu-end"
+                    className="dropdown-menu dropdown-menu-macos dropdown-menu-end"
                     aria-labelledby="languageMenuLink"
                   >
                     <li>
@@ -130,7 +130,7 @@ function Header({ simple, hideAuth }) {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="dropdown-item">
+                      <a href="#" className="dropdown-item mt-1">
                         Myanmar
                       </a>
                     </li>

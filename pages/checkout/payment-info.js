@@ -8,8 +8,8 @@ import PricingCard from "../../components/shopping-cart/pricing-card";
 function PaymentInfo() {
   const [option, setOption] = useState("visa");
 
-  function handlePaymentOptionChange(event) {
-    setOption(event.target.name);
+  function handlePaymentOptionChange(name) {
+    setOption(name);
   }
 
   return (
@@ -31,19 +31,19 @@ function PaymentInfo() {
                       name="cod"
                       title="Cash on delivery"
                       checked={option == "cod"}
-                      onCheckedChanged={handlePaymentOptionChange}
+                      onCheckedChanged={setOption}
                     />
                     <PaymentOptionCheck
                       name="mpu"
                       title="MPU"
                       checked={option == "mpu"}
-                      onCheckedChanged={handlePaymentOptionChange}
+                      onCheckedChanged={setOption}
                     />
                     <PaymentOptionCheck
                       name="visa"
                       title="VISA"
                       checked={option == "visa"}
-                      onCheckedChanged={handlePaymentOptionChange}
+                      onCheckedChanged={setOption}
                     />
                   </div>
                 </div>

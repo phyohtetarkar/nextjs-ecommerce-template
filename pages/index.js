@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Carousel } from "react-responsive-carousel";
 import ProductSimpleCard from "../components/product/product-simple-card";
 
 export default function Home() {
@@ -9,57 +10,56 @@ export default function Home() {
       <div className="container py-3">
         <div className="row mb-4">
           <div className="col-12">
-            <div
-              id="bannerIndicators"
-              className="carousel slide"
-              data-bs-ride="carousel"
+            <Carousel
+              autoPlay={true}
+              infiniteLoop={true}
+              showArrows={false}
+              showStatus={false}
+              showThumbs={false}
+              transitionTime={500}
+              renderIndicator={(onClickHandler, isSelected, index, label) => {
+                if (isSelected) {
+                  return (
+                    <li className="d-inline-block m-2 text-light">
+                      <FontAwesomeIcon icon={["fas", "circle"]} size="xs" />
+                    </li>
+                  );
+                }
+                return (
+                  <li
+                    className="d-inline-block m-2 text-light text-opacity-50"
+                    onClick={onClickHandler}
+                    key={index}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    <FontAwesomeIcon icon={["fas", "circle"]} size="xs" />
+                  </li>
+                );
+              }}
             >
-              <div className="carousel-indicators">
-                <button
-                  className="active"
-                  aria-current="true"
-                  data-bs-slide-to="0"
-                  data-bs-target="#bannerIndicators"
-                ></button>
-                <button
-                  data-bs-target="#bannerIndicators"
-                  data-bs-slide-to="1"
-                ></button>
-                <button
-                  data-bs-target="#bannerIndicators"
-                  data-bs-slide-to="2"
-                ></button>
+              <div className="ratio ratio-21x9">
+                <img
+                  src="/images/online-shopping.jpg"
+                  alt="Cover image"
+                  className="rounded"
+                />
               </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="3000">
-                  <div className="ratio ratio-21x9">
-                    <img
-                      src="/images/online-shopping.jpg"
-                      alt="Cover image"
-                      className="rounded"
-                    />
-                  </div>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                  <div className="ratio ratio-21x9">
-                    <img
-                      src="/images/online-shopping.jpg"
-                      alt="Cover image"
-                      className="rounded"
-                    />
-                  </div>
-                </div>
-                <div className="carousel-item" data-bs-interval="3000">
-                  <div className="ratio ratio-21x9">
-                    <img
-                      src="/images/online-shopping.jpg"
-                      alt="Cover image"
-                      className="rounded"
-                    />
-                  </div>
-                </div>
+              <div className="ratio ratio-21x9">
+                <img
+                  src="/images/online-shopping.jpg"
+                  alt="Cover image"
+                  className="rounded"
+                />
               </div>
-            </div>
+              <div className="ratio ratio-21x9">
+                <img
+                  src="/images/online-shopping.jpg"
+                  alt="Cover image"
+                  className="rounded"
+                />
+              </div>
+            </Carousel>
           </div>
         </div>
         <div className="row row-cols-1 row-cols-md-3 g-3 mb-4">

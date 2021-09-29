@@ -12,7 +12,7 @@ function ProductDetail() {
             <nav aria-label="breadcrumb col-12">
               <ol className="breadcrumb mb-1">
                 <li className="breadcrumb-item">
-                  <a href="#">All Products</a>
+                  <a href="#">All Categories</a>
                 </li>
                 <li className="breadcrumb-item">
                   <a href="#">Electronics</a>
@@ -88,17 +88,40 @@ function ProductDetail() {
               </div>
 
               <div className="vstack">
-                <small className="d-flex mb-3">
-                  <span className="text-muted">
+                <div className="d-flex mb-3 gap-2">
+                  <div className="hstack">
                     <FontAwesomeIcon
-                      icon={["fas", "clipboard-check"]}
-                      className="me-1"
+                      icon={["fas", "star"]}
+                      size="sm"
+                      className="text-warning"
                     />
-                    150 orders
+                    <FontAwesomeIcon
+                      icon={["fas", "star"]}
+                      size="sm"
+                      className="text-warning"
+                    />
+                    <FontAwesomeIcon
+                      icon={["fas", "star"]}
+                      size="sm"
+                      className="text-warning"
+                    />
+                    <FontAwesomeIcon
+                      icon={["fas", "star"]}
+                      size="sm"
+                      className="text-warning"
+                    />
+                    <FontAwesomeIcon
+                      icon={["fas", "star-half-alt"]}
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </div>
+                  <span className="text-muted small">150 orders</span>
+                  <span className="text-success small">
+                    <FontAwesomeIcon icon={["fas", "check-circle"]} />
+                    &nbsp;In Stock
                   </span>
-                  <div className="vr mx-2"></div>
-                  <span className="text-success my-auto">In Stock</span>
-                </small>
+                </div>
                 <h4 className="fw-semibold">15000Ks</h4>
                 <p className="fw-light">
                   Lorem ipsum is placeholder text commonly used in the graphic,

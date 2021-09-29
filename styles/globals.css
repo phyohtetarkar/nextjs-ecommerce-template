@@ -94,6 +94,10 @@ body {
   background: white;
 }
 
+.bg-background {
+  background: #f3f4f6;
+}
+
 .bg-primary-darker {
   background: #1448cc;
 }
@@ -106,4 +110,60 @@ body {
 .footer-link:hover {
   color: white;
   text-decoration: none;
+}
+
+.dropdown-menu-macos {
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu-macos .dropdown-item:hover {
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.my-list-item {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item svg {
+  color: #757575;
+}
+
+.my-list-item:hover {
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+  font-weight: 500;
+  color: black;
+}
+
+.my-list-item.active {
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item.active svg {
+  color: var(--bs-primary);
 }

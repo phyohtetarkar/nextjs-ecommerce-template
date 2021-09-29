@@ -1,5 +1,6 @@
 import "../styles/bootstrap-custom.css";
 import "../styles/globals.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";
