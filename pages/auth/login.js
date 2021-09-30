@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Layout from "../../components/layout";
 
 function Login() {
+  const router = useRouter();
   return (
     <div className="container py-3">
       <div className="row my-4">
@@ -29,7 +31,15 @@ function Login() {
                   </Link>
                 </div>
                 <div className="col-md-12 mt-4">
-                  <button className="btn btn-primary w-100">Login</button>
+                  <button
+                    type="button"
+                    className="btn btn-primary w-100"
+                    onClick={() => {
+                      router.push({ pathname: "/account/profile" });
+                    }}
+                  >
+                    Login
+                  </button>
                 </div>
                 <div className="col-md-12">
                   <div className="row g-2">

@@ -57,12 +57,12 @@ function Footer() {
                 <Link href="/auth/sign-up">
                   <a className="footer-link">User Register</a>
                 </Link>
-                <a href="#" className="footer-link">
-                  Account Setting
-                </a>
-                <a href="#" className="footer-link">
-                  My Orders
-                </a>
+                <Link href="/account/profile">
+                  <a className="footer-link">Account Setting</a>
+                </Link>
+                <Link href="/account/current-orders">
+                  <a className="footer-link">My Orders</a>
+                </Link>
               </div>
             </div>
             <div className="col-md-6 col-lg-4">

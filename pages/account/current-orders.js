@@ -1,11 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AccountMenu from "../../components/account-menu";
 import CurrentOrderCard from "../../components/account/current-order-card";
 import Layout from "../../components/layout";
-
-const cities = ["Yangon", "Mandalay", "Kalaw"];
-
-const states = ["Thar Kay Ta", "Daw Pon", "San Chaung"];
 
 function CurrentOrders() {
   return (

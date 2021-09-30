@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import ProductRating from "../product-rating";
 
 function ProductSimpleCard({ id, title }) {
   return (
@@ -21,35 +21,9 @@ function ProductSimpleCard({ id, title }) {
           </a>
         </Link>
 
-        <div className="hstack mb-2">
-          <FontAwesomeIcon
-            icon={["fas", "star"]}
-            size="sm"
-            className="text-warning"
-          />
-          <FontAwesomeIcon
-            icon={["fas", "star"]}
-            size="sm"
-            className="text-warning"
-          />
-          <FontAwesomeIcon
-            icon={["fas", "star"]}
-            size="sm"
-            className="text-warning"
-          />
-          <FontAwesomeIcon
-            icon={["fas", "star"]}
-            size="sm"
-            className="text-warning"
-          />
-          <FontAwesomeIcon
-            icon={["fas", "star-half-alt"]}
-            size="sm"
-            className="text-warning"
-          />
-        </div>
+        <ProductRating />
 
-        <h6 className="mb-0 fw-semibold">15000 Ks</h6>
+        <h6 className="mb-0 fw-semibold mt-2">15000 Ks</h6>
       </div>
     </div>
   );

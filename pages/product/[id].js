@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProductRating from "../../components/product-rating";
 import ProductSimpleHorizontal from "../../components/product/product-simple-horizontal";
 
 function ProductDetail() {
@@ -89,33 +90,7 @@ function ProductDetail() {
 
               <div className="vstack">
                 <div className="d-flex mb-3 gap-2">
-                  <div className="hstack">
-                    <FontAwesomeIcon
-                      icon={["fas", "star"]}
-                      size="sm"
-                      className="text-warning"
-                    />
-                    <FontAwesomeIcon
-                      icon={["fas", "star"]}
-                      size="sm"
-                      className="text-warning"
-                    />
-                    <FontAwesomeIcon
-                      icon={["fas", "star"]}
-                      size="sm"
-                      className="text-warning"
-                    />
-                    <FontAwesomeIcon
-                      icon={["fas", "star"]}
-                      size="sm"
-                      className="text-warning"
-                    />
-                    <FontAwesomeIcon
-                      icon={["fas", "star-half-alt"]}
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </div>
+                  <ProductRating />
                   <span className="text-muted small">150 orders</span>
                   <span className="text-success small">
                     <FontAwesomeIcon icon={["fas", "check-circle"]} />

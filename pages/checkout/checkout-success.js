@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 function CheckoutSuccess() {
   return (
@@ -17,7 +18,11 @@ function CheckoutSuccess() {
               <h3 className="text-center">Thank you for order</h3>
               <p className="text-center">
                 We&apos;ve received your order. You can track order status in
-                your <a href="#">account setting</a>.
+                your&nbsp;
+                <Link href="/account/current-orders">
+                  <a>account setting</a>
+                </Link>
+                .
               </p>
             </div>
           </div>

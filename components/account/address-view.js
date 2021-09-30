@@ -9,7 +9,7 @@ function AddressView() {
         size="lg"
       />
       <div className="text-truncate" style={{ maxHeight: 44 }}>
-        <p className=" mb-0 small text-wrap text-truncate">
+        <p className=" mb-0 small text-wrap">
           No. 33, Mocha Street, Milk Township Yangon, Myanmar No.
         </p>
       </div>
