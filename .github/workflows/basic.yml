@@ -2,7 +2,7 @@ name: Fontend CI
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
 #   pull_request:
 #     branches: [ main ]
 
@@ -25,3 +25,18 @@ jobs:
         with:
           name: nextjs artifacts
           path: out/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: nextjs artifacts
+          path: out
+      - name: Deploy to firebase hosting
+        run: |
+          npm install -g firebase-tools
+          firebase deploy --token ${{secrets.FIREBASE_TOKEN}}
