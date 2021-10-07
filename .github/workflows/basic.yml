@@ -1,0 +1,42 @@
+name: Fontend CI
+
+on:
+  push:
+    branches: [main]
+#   pull_request:
+#     branches: [ main ]
+
+# Allows you to run this workflow manually from the Actions tab
+# workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run nextjs build
+        run: |
+          npm install
+          npm run build
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: nextjs artifacts
+          path: out/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: nextjs artifacts
+          path: out
+      - name: Deploy to firebase hosting
+        run: |
+          npm install -g firebase-tools
+          firebase deploy --token ${{secrets.FIREBASE_TOKEN}}

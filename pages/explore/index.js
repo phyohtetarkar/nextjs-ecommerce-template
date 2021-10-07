@@ -98,28 +98,28 @@ function ExploreProducts() {
                       <div className="d-flex gap-2">
                         <input type="checkbox" className="form-check-input" />
                         <label className="fw-medium flex-grow-1">Apple</label>
-                        <span className="badge bg-gray rounded-pill my-auto mb-0 text-dark">
+                        <span className="badge bg-default rounded-pill my-auto mb-0 text-dark">
                           50
                         </span>
                       </div>
                       <div className="d-flex gap-2">
                         <input type="checkbox" className="form-check-input" />
                         <label className="fw-medium flex-grow-1">Samsung</label>
-                        <span className="badge bg-gray rounded-pill my-auto mb-0 text-dark">
+                        <span className="badge bg-default rounded-pill my-auto mb-0 text-dark">
                           100
                         </span>
                       </div>
                       <div className="d-flex gap-2">
                         <input type="checkbox" className="form-check-input" />
                         <label className="fw-medium flex-grow-1">Sony</label>
-                        <span className="badge bg-gray rounded-pill my-auto mb-0 text-dark">
+                        <span className="badge bg-default rounded-pill my-auto mb-0 text-dark">
                           30
                         </span>
                       </div>
                       <div className="d-flex gap-2">
                         <input type="checkbox" className="form-check-input" />
                         <label className="fw-medium flex-grow-1">AOC</label>
-                        <span className="badge bg-gray rounded-pill my-auto mb-0 text-dark">
+                        <span className="badge bg-default rounded-pill my-auto mb-0 text-dark">
                           60
                         </span>
                       </div>
