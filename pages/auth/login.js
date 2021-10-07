@@ -18,7 +18,7 @@ function Login() {
                   <input
                     type="email"
                     className="form-control"
-                    placeholder="name@gmail.com"
+                    placeholder="name@domain.com"
                   />
                 </div>
                 <div className="col-md-12">
