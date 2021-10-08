@@ -4,6 +4,7 @@ import CheckoutStepper from "../../components/checkout/checkout-stepper";
 import ReviewCartItem from "../../components/checkout/review-cart-item";
 import Layout from "../../components/layout";
 import PricingCard from "../../components/shopping-cart/pricing-card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ConfirmCheckout() {
   const router = useRouter();
@@ -45,9 +46,11 @@ function ConfirmCheckout() {
                 </div>
                 <div className="col-md-6">
                   <h4 className="fw-semibold">Payment Method</h4>
-                  <div className="d-flex gap-3">
-                    <div className="fw-semibold">VISA</div>
-                    <div className="vstack text-dark small">
+                  <div className="d-flex gap-3 text-success">
+                    <span className="fw-bold">
+                      <FontAwesomeIcon icon={["fab", "cc-visa"]} size="lg" />
+                    </span>
+                    <div className="vstack small text-muted">
                       <span>XXXX-XXXX-XXXX-2345</span>
                       <span>Exp: 03/25</span>
                     </div>

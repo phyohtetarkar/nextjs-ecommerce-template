@@ -35,7 +35,7 @@ function Profile() {
             <div className="row g-3">
               <div className="col-lg-9">
                 <div className="card border-0 shadow-sm mb-3">
-                  <div className="card-body px-4">
+                  <div className="card-body">
                     <h4 className="card-title fw-semibold mt-2 mb-3">
                       Profile
                     </h4>
