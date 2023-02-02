@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProductRating from "../../components/product-rating";
 import ProductSimpleHorizontal from "../../components/product/product-simple-horizontal";
+import { OmniWidget } from "../../src/OmniWidget";
 
 function ProductDetail() {
   const images = [2, 4, 6, 8, 1];
@@ -213,6 +214,8 @@ function ProductDetail() {
                     </div>
                   </dd>
                 </dl>
+
+                <OmniWidget />
 
                 <div className="d-flex">
                   <a
