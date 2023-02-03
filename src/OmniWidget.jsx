@@ -1,43 +1,84 @@
 import {
   Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Button,
-  Input,
   useDisclosure,
   Text,
+  Box,
+  Heading,
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import { ShipDrawerContent } from "./components/ShipDrawerContent";
+import { ReserveDrawerContent } from "./components/ReserveDrawerContent";
 
 export function OmniWidget() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
+  const shipDisclosure = useDisclosure();
+  const reserveDisclosure = useDisclosure();
+  const shipRef = useRef();
+  const reserveRef = useRef();
 
   return (
     <>
-      <div style={{ display: "flex", gap: "20px" }}>
-        <Button
-          ref={btnRef}
-          colorScheme="blue"
-          onClick={onOpen}
-          width="fit-content"
+      <div style={{ display: "flex", gap: "18px" }}>
+        <Box
+          borderRadius="6px"
+          borderWidth="2px"
+          borderColor="blue.300"
+          ref={shipRef}
+          onClick={shipDisclosure.onOpen}
+          cursor="pointer"
         >
-          Reserve online, ship from store
-        </Button>
+          <Box
+            backgroundColor="blue.50"
+            display="flex"
+            px={8}
+            gap={2}
+            justifyContent="center"
+          >
+            <img src="/images/truck.png" alt="" width="34" />
+            <Heading py={2} size="sm" color="gray.700">
+              Ship from Store
+            </Heading>
+          </Box>
 
-        <Button
-          ref={btnRef}
-          colorScheme="blue"
-          onClick={onOpen}
-          width="fit-content"
-          variant="outline"
+          <Text py={1} px={4} fontSize="sm">
+            Get this shipped from a nearby store.
+          </Text>
+        </Box>
+
+        <Box
+          borderRadius="6px"
+          borderWidth="2px"
+          borderColor="blue.300"
+          ref={reserveRef}
+          onClick={reserveDisclosure.onOpen}
+          cursor="pointer"
         >
-          Discover online, purchase at store
-        </Button>
+          <Box
+            backgroundColor="blue.50"
+            display="flex"
+            px={8}
+            gap={2}
+            justifyContent="center"
+          >
+            <img
+              src="/images/store.png"
+              alt=""
+              width="28"
+              style={{ margin: "4px 0" }}
+            />
+            <Heading
+              py={2}
+              size="sm"
+              backgroundColor="blue.50"
+              color="gray.700"
+            >
+              Reserve at Store
+            </Heading>
+          </Box>
+          <Text py={1} px={4} fontSize="sm">
+            Try this product at a nearby store.
+          </Text>
+        </Box>
       </div>
 
       <div
@@ -59,28 +100,27 @@ export function OmniWidget() {
       </div>
 
       <Drawer
-        isOpen={isOpen}
+        isOpen={shipDisclosure.isOpen}
         placement="right"
-        onClose={onClose}
-        finalFocusRef={btnRef}
+        onClose={shipDisclosure.onClose}
+        finalFocusRef={shipRef}
         size="sm"
       >
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Find a Mocha Store</DrawerHeader>
 
-          <DrawerBody>
-            <Input placeholder="Type here..." />
-          </DrawerBody>
+        <ShipDrawerContent shipDisclosure={shipDisclosure} />
+      </Drawer>
 
-          <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Save</Button>
-          </DrawerFooter>
-        </DrawerContent>
+      <Drawer
+        isOpen={reserveDisclosure.isOpen}
+        placement="right"
+        onClose={reserveDisclosure.onClose}
+        finalFocusRef={shipRef}
+        size="sm"
+      >
+        <DrawerOverlay />
+
+        <ReserveDrawerContent reserveDisclosure={reserveDisclosure} />
       </Drawer>
     </>
   );
