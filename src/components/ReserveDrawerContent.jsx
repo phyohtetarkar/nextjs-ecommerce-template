@@ -33,8 +33,13 @@ export function ReserveDrawerContent(props) {
         <Text fontSize="sm" color="gray.500">
           Bengaluru, Karnataka, 560029, IN
         </Text>
-        <Text fontSize="sm" display="inline" color="green.500">
-          Open
+        <Text
+          fontSize="sm"
+          display="inline"
+          color="green.500"
+          fontWeight="bold"
+        >
+          Available
         </Text>
         <Text fontSize="sm" display="inline" color="gray.500">
           {" "}
@@ -49,7 +54,7 @@ export function ReserveDrawerContent(props) {
   return (
     <DrawerContent>
       <DrawerCloseButton />
-      <DrawerHeader>Find a Mocha Store</DrawerHeader>
+      <DrawerHeader></DrawerHeader>
 
       <DrawerBody>
         {page === 0 ? (
@@ -57,25 +62,34 @@ export function ReserveDrawerContent(props) {
             <Heading
               fontSize="2xl"
               color="gray.600"
-              style={{ marginTop: "190px" }}
+              style={{ marginTop: "230px" }}
             >
               Enter your details
             </Heading>
 
-            <Input
-              placeholder="Location"
-              mt={10}
-              isRequired
-              onChange={(event) => setLocation(event.target.value)}
-            />
+            <InputGroup mt={10}>
+              <InputLeftAddon>
+                <img src="/images/pin.png" width="26" alt="" />
+              </InputLeftAddon>
+              <Input
+                placeholder="Enter your current location"
+                isRequired
+                onChange={(event) => setLocation(event.target.value)}
+              />
+            </InputGroup>
 
             <InputGroup my={6}>
               <InputLeftAddon>+91</InputLeftAddon>
               <Input type="tel" placeholder="Phone" isRequired />
             </InputGroup>
 
-            <Button color="blue.400" my={3} onClick={() => setPage(1)}>
-              Submit
+            <Button
+              colorScheme="blue"
+              width="100%"
+              my={3}
+              onClick={() => setPage(1)}
+            >
+              Find Stores
             </Button>
           </div>
         ) : null}
@@ -88,7 +102,7 @@ export function ReserveDrawerContent(props) {
               defaultValue={location}
             />
 
-            <Text color="gray.500" ml={4} mb={6}>
+            <Text color="gray.600" ml={4} mb={6}>
               Found 5 stores near {location}
             </Text>
 

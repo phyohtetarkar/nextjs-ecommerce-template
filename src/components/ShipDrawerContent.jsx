@@ -30,8 +30,13 @@ export function ShipDrawerContent(props) {
         <Text fontSize="sm" color="gray.500">
           Bengaluru, Karnataka, 560029, IN
         </Text>
-        <Text fontSize="sm" display="inline" color="green.500">
-          Open
+        <Text
+          fontSize="sm"
+          display="inline"
+          color="green.500"
+          fontWeight="bold"
+        >
+          Available
         </Text>
         <Text fontSize="sm" display="inline" color="gray.500">
           {" "}

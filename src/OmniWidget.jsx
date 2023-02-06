@@ -76,7 +76,7 @@ export function OmniWidget() {
             </Heading>
           </Box>
           <Text py={1} px={4} fontSize="sm">
-            Try this product at a nearby store.
+            Find this product at a nearby store.
           </Text>
         </Box>
       </div>
