@@ -215,8 +215,6 @@ function ProductDetail() {
                   </dd>
                 </dl>
 
-                <OmniWidget />
-
                 <div className="d-flex">
                   <a
                     href="#"
@@ -229,6 +227,8 @@ function ProductDetail() {
                     &nbsp;Add to cart
                   </button>
                 </div>
+
+                <OmniWidget />
               </div>
             </div>
           </div>

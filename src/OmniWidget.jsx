@@ -7,19 +7,19 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { useRef } from "react";
-import { ShipDrawerContent } from "./components/ShipDrawerContent";
+// import { ShipDrawerContent } from "./components/ShipDrawerContent";
 import { ReserveDrawerContent } from "./components/ReserveDrawerContent";
 
 export function OmniWidget() {
-  const shipDisclosure = useDisclosure();
+  // const shipDisclosure = useDisclosure();
   const reserveDisclosure = useDisclosure();
   const shipRef = useRef();
   const reserveRef = useRef();
 
   return (
     <>
-      <div style={{ display: "flex", gap: "18px" }}>
-        <Box
+      <div style={{ display: "flex", gap: "18px", marginTop: "28px" }}>
+        {/* <Box
           borderRadius="6px"
           borderWidth="2px"
           borderColor="blue.300"
@@ -36,14 +36,14 @@ export function OmniWidget() {
           >
             <img src="/images/truck.png" alt="" width="34" />
             <Heading py={2} size="sm" color="gray.700">
-              Ship from Store
+              Ship from nearby store
             </Heading>
           </Box>
 
           <Text py={1} px={4} fontSize="sm">
             Get this shipped from a nearby store.
           </Text>
-        </Box>
+        </Box> */}
 
         <Box
           borderRadius="6px"
@@ -72,7 +72,7 @@ export function OmniWidget() {
               backgroundColor="blue.50"
               color="gray.700"
             >
-              Reserve at Store
+              Try and buy in-store
             </Heading>
           </Box>
           <Text py={1} px={4} fontSize="sm">
@@ -99,7 +99,7 @@ export function OmniWidget() {
         />
       </div>
 
-      <Drawer
+      {/* <Drawer
         isOpen={shipDisclosure.isOpen}
         placement="right"
         onClose={shipDisclosure.onClose}
@@ -109,7 +109,7 @@ export function OmniWidget() {
         <DrawerOverlay />
 
         <ShipDrawerContent shipDisclosure={shipDisclosure} />
-      </Drawer>
+      </Drawer> */}
 
       <Drawer
         isOpen={reserveDisclosure.isOpen}

@@ -1,0 +1,3 @@
+[[redirects]]
+  from = "/product/*"
+  to = "/product/[id].html"
