@@ -13,9 +13,15 @@ function Header({ simple, hideAuth }) {
                 icon={["fas", "shopping-basket"]}
                 className="d-inline-block"
               /> */}
-              <span className="ms-2 mb-0 h4 text-primary fw-bold">
-                Mocha Mart
-              </span>
+              {/* <span className="ms-2 mb-0 h4 text-primary fw-bold">
+                WestSide
+              </span> */}
+              <img
+                src="https://1000logos.net/wp-content/uploads/2021/05/SUGAR-Cosmetics-logo.png"
+                alt="Wooden Street"
+                width="126px"
+                style={{ marginRight: "8px" }}
+              />
             </a>
           </Link>
           <div className="collapse navbar-collapse">

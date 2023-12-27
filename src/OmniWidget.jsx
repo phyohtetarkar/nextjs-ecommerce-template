@@ -48,7 +48,7 @@ export function OmniWidget() {
         <Box
           borderRadius="6px"
           borderWidth="2px"
-          borderColor="blue.300"
+          borderColor="blue.400"
           ref={reserveRef}
           onClick={reserveDisclosure.onOpen}
           cursor="pointer"
@@ -60,23 +60,17 @@ export function OmniWidget() {
             gap={2}
             justifyContent="center"
           >
-            <img
-              src="/images/store.png"
-              alt=""
-              width="28"
-              style={{ margin: "4px 0" }}
-            />
             <Heading
               py={2}
               size="sm"
               backgroundColor="blue.50"
               color="gray.700"
             >
-              Try and buy in-store
+              FIND IN STORE
             </Heading>
           </Box>
           <Text py={1} px={4} fontSize="sm">
-            Find this product at a nearby store.
+            Try this product at a nearby store.
           </Text>
         </Box>
       </div>
@@ -116,7 +110,7 @@ export function OmniWidget() {
         placement="right"
         onClose={reserveDisclosure.onClose}
         finalFocusRef={shipRef}
-        size="sm"
+        size="md"
       >
         <DrawerOverlay />
 

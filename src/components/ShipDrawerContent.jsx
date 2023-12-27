@@ -51,7 +51,7 @@ export function ShipDrawerContent(props) {
   return (
     <DrawerContent>
       <DrawerCloseButton />
-      <DrawerHeader>Find a Mocha Store</DrawerHeader>
+      <DrawerHeader>Reservation successful</DrawerHeader>
 
       <DrawerBody>
         {page === 0 ? (

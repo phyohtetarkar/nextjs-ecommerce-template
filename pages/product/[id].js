@@ -4,8 +4,6 @@ import ProductSimpleHorizontal from "../../components/product/product-simple-hor
 import { OmniWidget } from "../../src/OmniWidget";
 
 function ProductDetail() {
-  const images = [2, 4, 6, 8, 1];
-
   return (
     <div className="vstack">
       <div className="bg-secondary">
@@ -17,10 +15,10 @@ function ProductDetail() {
                   <a href="#">All Categories</a>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="#">Electronics</a>
+                  <a href="#">Cosmetics</a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  Product name
+                  Eye Lit You So Vivid Eyeliner 04 Yellow Bird
                 </li>
               </ol>
             </nav>
@@ -33,41 +31,54 @@ function ProductDetail() {
             <div className="col-lg-5">
               <div className="row">
                 <div className="col-12">
-                  <div className="ratio ratio-1x1">
-                    <img
-                      className="rounded"
-                      src={`https://source.unsplash.com/random/300x300?random=${Math.floor(
-                        Math.random() * 50
-                      )}`}
-                      width={300}
-                      height={300}
-                      alt="Product image."
-                    />
-                  </div>
+                  <img
+                    className="rounded"
+                    src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-27938825961555.jpg?v=1619153469"
+                    alt="Product image."
+                  />
                 </div>
               </div>
               <div className="row mt-3 d-none d-lg-block">
                 <div className="col-12 d-flex justify-content-center">
-                  {images.map((e) => {
-                    return (
-                      <div
-                        key={e}
-                        style={{ width: 60 }}
-                        className="me-2 ratio ratio-1x1"
-                      >
-                        <img
-                          className="rounded"
-                          src={`https://source.unsplash.com/random/80x80?random=${Math.floor(
-                            Math.random() * 50
-                          )}`}
-                          width={60}
-                          height={60}
-                          alt="Product image."
-                          key={e}
-                        />
-                      </div>
-                    );
-                  })}
+                  <div style={{ width: 60 }} className="me-2">
+                    <img
+                      className="rounded"
+                      src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-27938825961555.jpg?v=1619153469"
+                      width={60}
+                      height={60}
+                      alt="Product image."
+                    />
+                  </div>
+
+                  <div style={{ width: 60 }} className="me-2">
+                    <img
+                      className="rounded"
+                      src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-27938826158163.jpg?v=1645794822"
+                      width={60}
+                      height={60}
+                      alt="Product image."
+                    />
+                  </div>
+
+                  <div style={{ width: 60 }} className="me-2">
+                    <img
+                      className="rounded"
+                      src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-pastel-yellow-27939389079635.jpg?v=1619153474"
+                      width={60}
+                      height={60}
+                      alt="Product image."
+                    />
+                  </div>
+
+                  <div style={{ width: 60 }} className="me-2">
+                    <img
+                      className="rounded"
+                      src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-lit-you-so-vivid-eyeliner-04-yellow-bird-27938826649683.jpg?v=1619153476"
+                      width={60}
+                      height={60}
+                      alt="Product image."
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,7 +86,7 @@ function ProductDetail() {
             <div className="col-lg-7">
               <div className="d-flex">
                 <div className="d-inline h2 mb-0 fw-semibold me-3">
-                  Product name here
+                  Eye Lit You So Vivid Eyeliner 04 Yellow Bird
                 </div>
                 <div className="ms-auto">
                   <button
@@ -98,21 +109,31 @@ function ProductDetail() {
                     &nbsp;In Stock
                   </span>
                 </div>
-                <h4 className="fw-semibold">15000Ks</h4>
-                <p className="fw-light">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
+                <h4 className="fw-semibold">MRP &nbsp; ₹ 349.00</h4>
+
+                <p className="fw-light" style={{ marginTop: "8px" }}>
+                  Vivid eyeliners that spark outright creativity... Add a bright
+                  pop of colour to your makeup with this staggering range of
+                  coloured SUGAR Eye Lit You So! Vivid Eyeliners. These liquid
+                  eyeliners are available in six electrifying highly-pigmented
+                  matte finish shades, which are long-lasting, smudgeproof and
+                  incredibly opaque. The formula is packed with intense
+                  concentrated pigments, which offer a staying power of up to
+                  8-hrs, dries quickly and won’t fade or transfer until you say
+                  when.
                 </p>
-                <dl className="row mb-0">
-                  <dt className="col-sm-3 fw-semibold">Code#</dt>
-                  <dd className="col-sm-9">10001</dd>
-                  <dt className="col-sm-3 fw-semibold">Category</dt>
-                  <dd className="col-sm-9">Electronics</dd>
-                  <dt className="col-sm-3 fw-semibold">Delivery</dt>
-                  <dd className="col-sm-9">Yangon, Mandalay</dd>
+
+                <dl className="row mb-0" style={{ marginTop: "8px" }}>
+                  <dt className="col-sm-3 fw-semibold">Net Volume</dt>
+                  <dd className="col-sm-9">1.7ml</dd>
+                  <dt className="col-sm-3 fw-semibold">Country of Origin</dt>
+                  <dd className="col-sm-9">PRC</dd>
+                  <dt className="col-sm-3 fw-semibold">Company Name</dt>
+                  <dd className="col-sm-9">SUGAR Cosmetics LLC</dd>
                 </dl>
-                <hr className="text-muted" />
+
+                <hr className="text-muted" style={{ margin: "8px 0" }} />
+
                 <dl className="row gy-2 mb-4">
                   <dt className="col-12 fw-semibold">Color</dt>
                   <dd className="col-12">
